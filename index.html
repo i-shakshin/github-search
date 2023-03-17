@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск репозиториев на GitHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Поиск репозиториев на GitHub</h1>
+
+      <form>
+        <div class="search-container">
+          <label for="searchInput">Введите подстроку для поиска:</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Введите название репозитория"
+          />
+          <button type="submit">Искать</button>
+        </div>
+      </form>
+
+      <div id="errorContainer"></div>
+
+      <div id="resultsContainer">
+        <ul class="results"></ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
